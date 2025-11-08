@@ -1,0 +1,77 @@
+/* css/style.css */
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#6b7280;
+  --danger:#e53e3e;
+  --radius:12px;
+  --maxw:520px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg, #f7fafc, #eef2f6);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  width:90%;
+  max-width:var(--maxw);
+  margin:48px auto;
+}
+
+.topbar{
+  background:var(--card);
+  box-shadow:0 2px 8px rgba(12,15,20,0.04);
+  padding:12px 0;
+}
+.topbar .container{display:flex;align-items:center;justify-content:space-between}
+.topbar h2{margin:0;font-size:18px;color:var(--accent)}
+.topbar nav{display:flex;gap:12px;align-items:center}
+
+.card{
+  background:var(--card);
+  padding:22px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 30px rgba(34,41,47,0.06);
+}
+
+h1{margin-top:0;font-size:20px}
+h3{margin-bottom:8px;color:var(--muted)}
+
+label{display:block;margin:12px 0;font-size:14px;color:#374151}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+  width:100%;
+  padding:10px 12px;
+  margin-top:6px;
+  border:1px solid #e6e9ee;
+  border-radius:8px;
+  font-size:14px;
+  background:#fff;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:600;
+  cursor:pointer;
+  margin-top:12px;
+  text-decoration:none;
+}
+.btn.small{padding:6px 8px;font-size:13px;border-radius:8px}
+
+.muted{color:var(--muted);font-size:13px;margin-top:10px}
+.errors{background:#fff5f5;border:1px solid rgba(229,62,62,0.12);padding:10px;border-radius:8px;margin-bottom:12px}
+.errors ul{margin:0;padding-left:18px;color:var(--danger);font-size:14px}

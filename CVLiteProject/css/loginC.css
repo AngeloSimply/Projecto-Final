@@ -1,0 +1,384 @@
+/*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all .3s ease-in-out;
+}
+body{
+    padding: 20px;
+}
+
+.main-tela{
+    width: 80vw;
+    height: 90vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: 0px 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    border-radius: 20px;
+    margin: auto;
+}
+.login-esq{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #77ffc0;
+}
+
+.login-dir{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px -100px;
+
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.dateUser{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.dateUser > input{
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+.dateUser > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+.dateUser > input::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f0ffff94;
+
+}
+.btn-login{
+    width: 100%;
+    border: none;
+    padding: 16px 0px;
+    margin: 25px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #2b134b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #00ff88;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 600px){
+    .main-tela{
+        flex-direction: column;
+    }
+    .login-esq > h1{
+        display: none;
+    }
+    .login-esq, .login-dir{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .login-esq img{
+        width: 50vw;
+    }
+
+}
+
+
+
+
+img{
+    border-radius: 50%;
+    border: solid 2px #020247b7;
+    width: 250px;
+}
+p{
+    color: #fff;
+
+}
+p > a{
+    color: #00ff88;
+    text-decoration: none;
+}
+.login-esq > h1 > span{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* 🔙 Botão voltar ao menu principal (canto inferior direito) 
+.btn-voltar {
+    position: fixed;
+    bottom: 25px;
+    right: 35px;
+    font-size: 2.6rem;
+    color: #00ff88;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 9999;
+    opacity: 0.9;
+}
+
+.btn-voltar:hover {
+    color: #ffffff;
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+*/
+
+/* -------------------
+  LOGIN - estilo alinhado ao projeto principal (azul / aqua)
+   - Use as cores do projeto: #00e1ff #00bfff #023e8a #008cff #03045e
+--------------------*/
+
+/* base (compatível com teu reset global) */
+
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+  /* fundo igual ao slider do projeto para manter identidade */
+  background: #ffffffa1;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 40px 20px;
+}
+
+/* container principal do login (centro) */
+.main-tela{
+  width: 95%;
+  max-width: 1100px;
+  height: 78vh;
+  background: linear-gradient(45deg, #00e1ff 0%, #00bfff6e 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(1,40,80,0.18);
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* botão voltar dentro do main - cantinho superior esquerdo */
+.btn-voltar{
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  z-index: 5;
+  font-size: 2.2rem;
+  color: #023e8a; /* azul escuro do projeto */
+  background: linear-gradient(180deg, #ffffff1f, #ffffff0f);
+  padding: 6px 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform .18s ease, color .18s ease, box-shadow .18s ease;
+}
+.btn-voltar:hover{
+  transform: translateY(-3px) scale(1.06);
+  color: #023e8a;
+
+
+}
+
+/* Lado esquerdo (ilustrativo) */
+.login-esq{
+  width: 48%;
+  padding: 48px 36px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:18px;
+  background: linear-gradient(135deg, rgba(2,62,138,0.06), rgba(0,140,255,0.04));
+  color: #ffffff;
+  text-align:center;
+}
+.login-esq h1{
+  color:#ffffff;
+  font-size: 1.9rem;
+  line-height:1.15;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+.login-esq h1 span{
+  color:#023e8a;
+  display:block;
+  font-weight:700;
+}
+.login-esq img{
+  width: 420px;
+  height:320px;
+  object-fit:cover;
+  border-radius:5%;
+}
+
+/* Lado direito (formulário) */
+.login-dir{
+  width: 52%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding: 36px;
+}
+
+/* cartão do formulário */
+.card-login{
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff81;
+  border-radius: 16px;
+  padding: 30px 28px;
+  box-shadow: 0 12px 30px rgba(2,62,138,0.08);
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  align-items:stretch;
+}
+
+/* campo - label + input */
+.dateUser{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:6px;
+}
+.dateUser label{
+  color:#274060;
+  font-size:0.95rem;
+  font-weight:600;
+}
+.dateUser input{
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid #e6eef7;
+  background: #fbfdff;
+  font-size:1rem;
+  color:#06283d;
+  outline:none;
+  transition: box-shadow .15s ease, transform .12s ease;
+}
+.dateUser input:focus{
+  box-shadow: 0 6px 18px rgba(0, 142, 255, 0.12);
+  transform: translateY(-1px);
+  border-color: #00bfff;
+}
+
+/* botão entrar com cor primária do projeto */
+.btn-login{
+  width:100%;
+  padding:12px 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(180deg, #023e8a, #03045e);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(2,62,138,0.18);
+  margin-top: 6px;
+}
+.btn-login:hover{
+  transform: translateY(-3px);
+  background: linear-gradient(180deg, #03045e, #023e8a);
+}
+
+/* texto pequeno */
+.small-txt{
+  margin:0;
+  text-align:center;
+  color:#284657;
+  font-size:0.95rem;
+  margin-top:8px;
+}
+.small-txt a{
+  color:#00bfff;
+  text-decoration:none;
+  font-weight:700;
+}
+.small-txt a:hover{
+  text-decoration:underline;
+}
+.c-logo{
+  width: 30%;
+
+  margin: auto;
+}
+
+/* erro */
+.erro{
+  color:#c53030;
+  background: #fff4f4;
+  padding:8px 10px;
+  border-radius:6px;
+  border:1px solid rgba(197, 47, 47, 0.12);
+  font-size:0.95rem;
+  margin-bottom:6px;
+  text-align:center;
+}
+
+/* responsivo */
+@media (max-width: 900px){
+  .main-tela{
+    flex-direction:column;
+    height:auto;
+    padding: 18px;
+  }
+  .login-esq, .login-dir{
+    width:100%;
+    padding: 18px;
+  }
+  .login-esq img{ width: 160px; height:160px; }
+  .btn-voltar{ left: 14px; top: 12px; font-size: 1.8rem; }
+  .card-login{ max-width: 560px; }
+}
+
+@media (max-width:480px){
+  body{ padding:18px 10px; }
+  .login-esq h1{ font-size:1.2rem; }
+  .card-login{ padding:18px; }
+}
