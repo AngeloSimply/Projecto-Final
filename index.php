@@ -43,6 +43,7 @@ if (isset($_SESSION['user_id'])) {
           <li class="nav-item"><a class="nav-link" href="#">Ínicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#Perguntas">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="recrutamentos.php">Recrutamentos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contactos</a></li>
         </ul>
 
