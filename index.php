@@ -10,15 +10,17 @@ if (isset($_SESSION['user_id'])) {
 
 
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="pt-AO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - CVLite</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<link rel="stylesheet" href="css/indexC.css">
-<link rel="shortcut icon" href="Midias/Logo/Logo-CVLiteUPDATE.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/indexC.css">
+  <link rel="shortcut icon" href="Midias/Logo/Logo-CVLiteUPDATE.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@ if (isset($_SESSION['user_id'])) {
           <li class="nav-item"><a class="nav-link" href="#">Ínicio</a></li>
           <li class="nav-item"><a class="nav-link" href="#Perguntas">FAQ</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="recrutamentos.php">Recrutamentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recrutamentos">Recrutamentos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contactos</a></li>
         </ul>
 
@@ -75,10 +77,9 @@ if (isset($_SESSION['user_id'])) {
     <div class="slider-text">
       <h1>Bem-vindo à <span>CVLite</span></h1>
       <p>
-        Crie currículos modernos 99% grátis, profissionais e prontos para impressionar recrutadores.  
-        Com a <strong>CVLite</strong> você tem acesso a ferramentas simples, 
-        rápidas para destacar suas qualificações e alcançar oportunidades de trabalho.
+        Crie currículos profissionais, 99% grátis, e tenha acesso a Recrutamentos e oportunidades de trabalho em um único lugar.
       </p>
+
       <div class="slider-buttons">
         <a href="login.php" class="btn btn-primary">Criar CV</a>
         <a href="#sobre" class="btn btn-outline">Saber Mais</a>
@@ -97,9 +98,7 @@ if (isset($_SESSION['user_id'])) {
   <div class="container">
     <h2>Por que escolher a <span>CVLite</span>?</h2>
     <p>
-      A <strong>CVLite</strong> é uma plataforma simples, moderna e personalizado para criar currículos
-      modernos e profissionais 99% grátis em poucos minutos. Dê o próximo passo na sua carreira
-      com estilo e resultados.
+      A <strong>CVLite</strong> é uma plataforma simples, moderna e personalizada para criar currículos modernos e profissionais, 99% grátis, em poucos minutos. Além disso, oferece uma área de Recrutamentos, conectando candidatos a oportunidades reais para que você dê o próximo passo na sua carreira com estilo e resultados.
     </p>
   </div>
 </section>
@@ -109,23 +108,117 @@ if (isset($_SESSION['user_id'])) {
   <div class="container">
     <h2>Sobre a <span>CVLite</span></h2>
     <p>
-      A <strong>CVLite</strong> nasceu com o objetivo de simplificar a criação de currículos 
-      modernos, profissionais e compatíveis com sistemas de recrutamento (ATS). 
-      Sabemos que o primeiro passo para conquistar uma oportunidade no mercado de trabalho 
-      é ter um currículo bem estruturado, claro e atrativo.
+      A <strong>CVLite</strong> nasceu com o objetivo de simplificar a criação de currículos modernos, profissionais e totalmente compatíveis com sistemas de recrutamento (ATS). Desde o início, focámo-nos em eliminar as dificuldades enfrentadas por candidatos ao apresentar suas competências de forma clara, estruturada e atrativa para o mercado de trabalho.
+      Com a evolução da plataforma, a CVLite passou a ir além da criação de currículos, integrando também uma área de recrutamentos, onde empresas e candidatos se conectam de forma mais direta e eficiente. Essa funcionalidade foi criada para aproximar talentos de oportunidades reais, facilitando o acesso a vagas publicadas por empresas reconhecidas em diferentes setores.
     </p>
+
     <p>
-      Nossa missão é ajudar candidatos a se destacarem em processos seletivos, 
-      oferecendo modelos sofisticados, fáceis de usar e que atendem aos padrões exigidos 
-      por recrutadores e empresas em diferentes setores.
+      Nossa missão é ajudar candidatos a se destacarem em processos seletivos, oferecendo modelos sofisticados, fáceis de usar e alinhados aos padrões exigidos por recrutadores, ao mesmo tempo em que promovemos visibilidade e acesso a oportunidades profissionais.
     </p>
+
     <p>
-      Acreditamos que cada pessoa merece uma chance justa de mostrar suas habilidades. 
-      Por isso, criamos uma plataforma acessível, rápida e eficiente, que coloca você 
-      no centro da sua carreira.
+      Acreditamos que cada pessoa merece uma chance justa de mostrar suas habilidades. Por isso, criamos uma plataforma acessível, rápida e eficiente, que coloca você no centro da sua carreira — desde a criação do currículo até o acesso às oportunidades de emprego.
     </p>
   </div>
 </section>
+
+<!--Section Recrutamentos-->
+
+<section class="recrutamentos-destaque" id="recrutamentos">
+  <div class="container">
+    <h2>Recrutamentos em<span> Destaque</span></h2>
+    <p class="descricao">
+      Oportunidades divulgadas por empresas reconhecidas para impulsionar a sua carreira.
+    </p>
+
+    <div class="carousel" id="carousel">
+      <div class="carousel-track">
+
+        <!-- EMPRESA 1 -->
+        <div class="recrutamento-card">
+          <img src="Midias/empresas/nestle.png" alt="Nestlé">
+          <h3>Assistente Administrativo</h3>
+          <p class="empresa">Nestlé Angola</p>
+          <p class="prazo"><i class="bi bi-calendar-event"></i> 02/01/2025 – 20/01/2025</p>
+
+          <button class="btn-ver" onclick="toggleDetalhes(0)">Ver mais</button>
+
+          <div class="detalhes" id="detalhes-0">
+            <p><strong>Requisitos:</strong></p>
+            <ul>
+              <li>Ensino médio completo</li>
+              <li>Conhecimentos de informática</li>
+              <li>Boa comunicação</li>
+            </ul>
+
+            <p><strong>Enviar CV:</strong></p>
+            <p>
+              <i class="bi bi-envelope"></i> recrutamento@nestle.com <br>
+              <i class="bi bi-whatsapp"></i> +244 923 000 111 <br>
+              <i class="bi bi-globe"></i> www.nestle.com/carreiras
+            </p>
+          </div>
+        </div>
+
+        <!-- EMPRESA 2 -->
+        <div class="recrutamento-card">
+          <img src="Midias/empresas/unitel.png" alt="Unitel">
+          <h3>Técnico de Informática</h3>
+          <p class="empresa">Unitel</p>
+          <p class="prazo"><i class="bi bi-calendar-event"></i> 05/01/2025 – 25/01/2025</p>
+
+          <button class="btn-ver" onclick="toggleDetalhes(1)">Ver mais</button>
+
+          <div class="detalhes" id="detalhes-1">
+            <ul>
+              <li>Curso técnico em informática</li>
+              <li>Experiência mínima de 1 ano</li>
+            </ul>
+
+            <p>
+              <i class="bi bi-envelope"></i> rh@unitel.ao <br>
+              <i class="bi bi-whatsapp"></i> +244 934 111 222 <br>
+              <i class="bi bi-globe"></i> www.unitel.ao/recrutamento
+            </p>
+          </div>
+        </div>
+
+        <!-- EMPRESA 3 -->
+        <div class="recrutamento-card">
+          <img src="Midias/empresas/transco.png" alt="Transco">
+          <h3>Motorista Profissional</h3>
+          <p class="empresa">Transco</p>
+          <p class="prazo"><i class="bi bi-calendar-event"></i> 10/01/2025 – 28/01/2025</p>
+
+          <button class="btn-ver" onclick="toggleDetalhes(2)">Ver mais</button>
+
+          <div class="detalhes" id="detalhes-2">
+            <ul>
+              <li>Carta de condução válida</li>
+              <li>Experiência comprovada</li>
+            </ul>
+
+            <p>
+              <i class="bi bi-envelope"></i> vagas@transco.ao <br>
+              <i class="bi bi-whatsapp"></i> +244 922 333 444
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- INDICADORES -->
+      <div class="carousel-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 
 
 <!-- Seção Benefícios -->
@@ -300,6 +393,47 @@ if (isset($_SESSION['user_id'])) {
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<script>
+    let index = 0;
+    const track = document.querySelector('.carousel-track');
+    const dots = document.querySelectorAll('.dot');
+    let interval;
+
+    function showSlide(i) {
+      index = i;
+      track.style.transform = `translateX(-${i * 50}%)`;
+      dots.forEach(d => d.classList.remove('active'));
+      dots[i].classList.add('active');
+    }
+
+    function startCarousel() {
+      interval = setInterval(() => {
+        index = (index + 1) % dots.length;
+        showSlide(index);
+      }, 4000);
+    }
+
+    function stopCarousel() {
+      clearInterval(interval);
+    }
+
+    document.getElementById('carousel').addEventListener('mouseenter', stopCarousel);
+    document.getElementById('carousel').addEventListener('mouseleave', startCarousel);
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => showSlide(i));
+    });
+
+    function toggleDetalhes(id) {
+      const el = document.getElementById(`detalhes-${id}`);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+
+    startCarousel();
+</script>
+
+
 </body>
 </html>
 
